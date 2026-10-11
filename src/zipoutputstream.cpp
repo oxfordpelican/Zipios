@@ -26,7 +26,9 @@
  * data being written to a Zip archive.
  */
 
-#include "zipoutputstream.hpp"
+#include "zipios/zipoutputstream.hpp"
+
+#include "zipoutputstreambuf.hpp"
 #include "zipcentraldirectoryentry.hpp"
 
 #include <fstream>

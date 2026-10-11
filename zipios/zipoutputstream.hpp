@@ -1,6 +1,6 @@
 #pragma once
-#ifndef ZIPOUTPUTSTREAM_HPP
-#define ZIPOUTPUTSTREAM_HPP
+#ifndef ZIPIOS_ZIPOUTPUTSTREAM_HPP
+#define ZIPIOS_ZIPOUTPUTSTREAM_HPP
 
 /*
   Zipios -- a small C++ library that provides easy access to .zip files.
@@ -30,7 +30,11 @@
  * which is used to compress data being saved in a Zip archive.
  */
 
-#include "zipoutputstreambuf.hpp"
+#include "zipios/fileentry.hpp"
+
+#include <memory>
+#include <ostream>
+#include <string>
 
 
 namespace zipios
@@ -51,7 +55,7 @@ public:
     void            setComment(std::string const & comment);
 
 private:
-    std::unique_ptr<ZipOutputStreambuf> m_ozf = std::unique_ptr<ZipOutputStreambuf>();
+    std::unique_ptr<ZipOutputStreambuf> m_ozf{};
 };
 
 

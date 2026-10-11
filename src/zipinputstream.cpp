@@ -27,7 +27,9 @@
  * that can be compressed using the zlib library.
  */
 
-#include "zipinputstream.hpp"
+#include "zipios/zipinputstream.hpp"
+
+#include "zipinputstreambuf.hpp"
 
 #include <fstream>
 

@@ -34,8 +34,8 @@
 #include "backbuffer.hpp"
 #include "zipendofcentraldirectory.hpp"
 #include "zipcentraldirectoryentry.hpp"
-#include "zipinputstream.hpp"
-#include "zipoutputstream.hpp"
+#include "zipios/zipinputstream.hpp"
+#include "zipios/zipoutputstream.hpp"
 
 #include <fstream>
 
